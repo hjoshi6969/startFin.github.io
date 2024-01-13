@@ -1,4 +1,5 @@
 :root {
+    --super-big-hero:70px;
     --Hero-big:47.78px;
     --hero-text: 39.8px;
     --h1:23.04px;
@@ -6,7 +7,7 @@
     --p:17.33px;
     --main-color:white;
     --second-main:#3d3b40f5;
-    --system-color:525CEB;
+    --system-color:#525CEB;
 }
 
 html {
@@ -29,7 +30,7 @@ body {
 }
 
 nav {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     position: fixed;
     width: 100vw;
@@ -67,8 +68,8 @@ nav * {
 
 .close-button-container {
     position: absolute;
-    top: 10px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     cursor: pointer;
 }
 
@@ -89,7 +90,7 @@ nav * {
 .hero-text {
     font-size: var(--Hero-big);
     width: 90%;
-    height: 70vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     margin: auto;
@@ -153,4 +154,70 @@ nav * {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bottom-heading {
+    font-size: var(--Hero-big);
+    margin-top: 30vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    color: var(--system-color);
+    font-weight: bold;
+}
+
+.bottom {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20vh;
+}
+
+@media (min-width: 600px) {
+    .hero-text {
+        font-size: var(--super-big-hero);
+    }
+
+    .heading {
+        font-size: var(--hero-text);
+    }
+
+    .head {
+        font-size: var(--hero-text);
+        margin: 100px 0px 30px 0px;
+    }
+
+    .heading-2 {
+        font-size: var(--h1);
+        margin: 30px 0px 30px 0px;
+    }
+    
+    .description {
+        margin: 30px 0px 30px 0px;
+    }
+
+    #about {
+        width: 893px;
+    }
+
+    .content {
+        width: 893px;
+        margin: auto;
+    }
+    .link-container a {
+        font-size: var(--super-big-hero);
+    }
+
+    .bottom-heading {
+        font-size: 90px;
+        margin-top: 20vh;
+        margin-bottom: 20vh;
+        text-align: center;
+        color: var(--system-color);
+        font-weight: bold;
+    }
+    
+    .bottom {
+        width: 893px;
+        margin: auto;
+        margin-bottom: 20vh;
+    }
 }
