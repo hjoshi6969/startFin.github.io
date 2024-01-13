@@ -1,0 +1,156 @@
+:root {
+    --Hero-big:47.78px;
+    --hero-text: 39.8px;
+    --h1:23.04px;
+    --h2:19.2px;
+    --p:17.33px;
+    --main-color:white;
+    --second-main:#3d3b40f5;
+    --system-color:525CEB;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@font-face {
+    font-family: 'Lato';
+    src: url('Lato/Lato-Bold.ttf') format('truetype');
+    /* Add additional font properties if needed */
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: Lato;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100vw;
+    background-color: white;
+    border-bottom: 1px rgb(190, 188, 188) solid;
+}
+
+nav * {
+    padding: 10px;
+}
+
+.nav-button {
+    cursor: pointer;
+}
+
+.logo {
+    font-size: var(--h1);
+    font-weight: bold;
+    align-self: center;
+}
+
+.nav-content {
+    width: 100%; /* Adjusted width for responsiveness */
+    height: 100%;
+    background-color: var(--second-main);
+    position: fixed;
+    transition: 0.5s;
+    top: 0;
+    left: -100%; /* Adjusted the left property to -100% */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.close-button-container {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.nav-content-container {
+    
+}
+
+.link-container {
+    margin-bottom: 60px;
+}
+
+.link-container a {
+    color: white;
+    text-decoration: none;
+    font-size: var(--Hero-big);
+}
+
+.hero-text {
+    font-size: var(--Hero-big);
+    width: 90%;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    margin: auto;
+}
+
+#about {
+    width: 90%;
+    margin: auto;
+    height: fit-content;
+}
+
+.heading {
+    font-size: var(--h1);
+    font-weight: bold;
+}
+
+.heading-2 {
+    font-size: var(--h2);
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.description {
+    margin-top: 30px;
+    font-size: var(--p);
+    width: 90%;
+    margin: auto;
+}
+
+.head {
+    font-size: var(--h1);
+    font-weight: bold;
+    width: 90%;
+    margin: auto;
+}
+
+.content {
+    margin-top: 60px;
+}
+
+.img-conatiner img {
+    width: 90%;
+}
+
+.img-conatiner {
+    margin: auto;
+    width: 90%;
+    margin-top: 30px;
+}
+
+.ad {
+    width: 300px;
+    height: 300px;
+    border: 1px grey solid; 
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
